@@ -1,0 +1,9 @@
+[0.764s] Invoking command in '/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/vicon_position_bridge': PYTHONPATH=/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/vicon_position_bridge/prefix_override:/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/install/vicon_position_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/vicon_position_bridge/build --no-deps install_data
+[0.901s] /home/asrl/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.901s]   warnings.warn(
+[0.928s] running develop
+[1.017s] running egg_info
+[1.020s] writing manifest file 'vicon_position_bridge.egg-info/SOURCES.txt'
+[1.040s] running build_ext
+[1.041s] running install_data
+[1.068s] Invoked command in '/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/vicon_position_bridge' returned '0': PYTHONPATH=/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/vicon_position_bridge/prefix_override:/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/install/vicon_position_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/vicon_position_bridge/build --no-deps install_data
