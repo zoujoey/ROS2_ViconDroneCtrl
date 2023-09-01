@@ -1,5 +1,6 @@
 """
-Python implementation of Offboard Control
+ROS2 Node for sending trajectory setpoints for helical trajectory (simply run the node when placing drone at starting point, sp)
+(Must be paired with offboard control ROS2 node running)
 """
 
 

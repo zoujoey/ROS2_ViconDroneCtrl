@@ -1,4 +1,6 @@
-
+"""
+ROS2 Node example provided by PX4 for simple hover
+"""
 import rclpy
 from rclpy.node import Node
 from rclpy.clock import Clock

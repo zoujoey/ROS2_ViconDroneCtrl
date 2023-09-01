@@ -25,7 +25,7 @@ setup(
         'console_scripts': [
             "pose_data_save = vicon_position_bridge.pose_data_save:main",
             "pose_pub = vicon_position_bridge.pose_pub:main",
-            "pose_rec_three = vicon_position_bridge.pose_rec_three:main",
+            "pose_sub = vicon_position_bridge.pose_sub:main",
             "pose_grapher_xy = vicon_position_bridge.pose_grapher_xy:main",
             "pose_grapher_yz = vicon_position_bridge.pose_grapher_yz:main",
             "pose_grapher_xz = vicon_position_bridge.pose_grapher_xz:main",

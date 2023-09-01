@@ -1,5 +1,5 @@
 """
-Python implementation of Offboard Control
+ROS2 Node for formatting and sending trajectory setpoints from other trajectory nodes to drone controller
 """
 
 

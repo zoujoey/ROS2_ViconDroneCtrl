@@ -1,3 +1,7 @@
+"""
+ROS2 Node for Converting Vicon FLU Reference Frame Position and Orientation to NED Reference Frame and sending it to Onboard Computer
+(Needs to be paired with MicroRTPS Bridge and ROS2 node pose_sub)
+"""
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped

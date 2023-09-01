@@ -1,4 +1,5 @@
-# config_file
+# config_file for the keyboard controller, containing the speed, dimensions, and other parameters 
+# in dealing with autonomous mission trajectories and manual control
 # Initial Takeoff 
 
 start:

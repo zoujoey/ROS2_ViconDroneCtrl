@@ -3,8 +3,8 @@ from math import sin, cos, tan, pi
 def position_function(time):
     """
     This is the function that takes a time input and produces
-    x, y, z, and yaw positions as output.
-    Modify this function as needed.
+    x, y, z, and yaw positions as output. 
+    Modify this function as needed for continuous linear setpoints.
     """
     time = time/100
     x = time * 0.05  # Example position calculation

@@ -1,5 +1,6 @@
 """
-Python implementation of Offboard Control
+ROS2 Node for processing keyboard inputs, communicating to trajectories on stand-by, and manual control of the drone
+(must be paired with ROS2 node pose_pub for position lock)
 """
 
 

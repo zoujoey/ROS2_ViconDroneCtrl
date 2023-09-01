@@ -1,3 +1,7 @@
+"""
+ROS2 Node for Receiving Vicon NED Reference Frame Position and Orientation on Onboard and sending it to Drone's Controller
+(Needs to be paired with MicroRTPS Bridge and ROS2 node pose_pub)
+"""
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
@@ -64,7 +68,7 @@ class publishernode(Node):
         # msg.pose_covariance[18] = 1.0  # pitch variance
         # msg.pose_covariance[20] = 1.0  # yaw variance
         msg.velocity_covariance = [float("NaN")]*21
-        # self.get_logger().info("Datum: "+str(msg.timestamp)+"\n" + str(msg.x)+" "+str(msg.y)+" "+str(msg.z))
+        self.get_logger().info("Datum: "+str(msg.timestamp)+"\n" + str(msg.x)+" "+str(msg.y)+" "+str(msg.z))
         self.xdatum2 = msg
         
 def main(args = None):

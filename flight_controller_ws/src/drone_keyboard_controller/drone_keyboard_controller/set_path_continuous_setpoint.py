@@ -1,5 +1,6 @@
 """
-Python implementation of Offboard Control
+ROS2 Node for sending trajectory setpoints for custom continuous trajectory (simply run the node when placing drone at starting point, sp)
+(follows trajectory defined in param_trajectory.py)
 """
 
 

@@ -1,3 +1,6 @@
+"""
+ROS2 Node for Real-Time X vs Y Position Graph based on Vicon
+"""
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np

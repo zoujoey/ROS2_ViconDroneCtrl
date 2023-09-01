@@ -1,7 +1,6 @@
 """
-Python implementation of Offboard Control
+ROS2 Node for formatting and sending trajectory setpoints from other trajectory nodes to drone controller
 """
-
 
 import rclpy
 from geometry_msgs.msg import PoseStamped
