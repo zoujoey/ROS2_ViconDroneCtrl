@@ -25,16 +25,16 @@ environment.
 
 ## Getting Started
 
-Before the setup process, ensure all the Prerequisites are finished below. Read the Safety Guidelines to ensure responsible drone operation. Once acquainted with the safety guidelines, proceed to the Quick Setup Guide for initial drone control setup.
+Before the setup process, ensure all the Requirements are finished below. Read the Safety Guidelines to ensure responsible drone operation. Once acquainted with the safety guidelines, proceed to the Quick Setup Guide for initial drone control setup.
 For detailed instructions, customisation, troubleshooting, and a demonstration of the drone's capabilities, consult the sections in the table of contents.
 
-## Prequisites before starting 
-### Hardware Prequisite:
+## Requirements before starting 
+### Hardware Requirements:
 *Make sure that all the hardware components listed in the Drone_Components.jpg above are on the drone's top plate*  
 
 Drone Model: **Holybro Pixhawk 6c Controller, Holybro x500 v2 model**
 
-### Software Prequisites: 
+### Software Requirements: 
 *Make sure the software on the ground control and onboard computers are as follows*   
 
 Operating System: **Ubuntu Linux, version 20**  
@@ -45,7 +45,7 @@ Wifi Newtork: **TP-Link_ROB498**
 Controller Firmware Type, Version: **PX4 (with microRTPS), v1.13**  
 Current Controller
 
-### ROS2 Packages Prequisites:  
+### ROS2 Packages Requirements:  
 *Install the following github repos and applications:*  
 
 **ROS2 foxy**
