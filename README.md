@@ -6,7 +6,7 @@ Welcome to the Holybro Demo Repository— a collection of ROS2 packages, executa
 
 **vicon_position_bridge**: vicon communication pipeline to drone controller
 
-**drone_offboard_missions**: singular executable autonomous missions
+**drone_offboard_missions**: singular ROS2 executable autonomous missions
 
 **drone_keyboard_controller**: keyboard controller with configurable autonomous missions
 
@@ -25,8 +25,8 @@ environment.
 
 ## Getting Started
 
-Before the setup process, ensure all the Requirements are finished below. Read the Safety Guidelines to ensure responsible drone operation. Once acquainted with the safety guidelines, proceed to the Quick Setup Guide for initial drone control setup.
-For detailed instructions, customisation, troubleshooting, and a demonstration of the drone's capabilities, consult the sections in the table of contents.
+Before the setup process, ensure all the Environment Requirements are met as below. Read the Safety Guidelines to ensure responsible drone operation. Once acquainted with the safety guidelines, proceed to the Quick Setup Guide for initial drone control setup.
+For detailed instructions, customisation, troubleshooting, and a demonstration of the drone's capabilities, consult the other guides above.
 
 ## Requirements before starting 
 ### Hardware Requirements:
@@ -45,10 +45,14 @@ Wifi Newtork: **TP-Link_ROB498**
 Controller Firmware Type, Version: **PX4 (with microRTPS), v1.13**  
 Current Controller
 
-### ROS2 Packages Requirements:  
+### ROS2 Packages and other Software Requirements:  
 *Install the following github repos and applications:*  
 
-**ROS2 foxy**
+**ROS2 foxy:**  follow instructions on website below  
+https://docs.ros.org/en/foxy/Installation.html 
+
+**QGroundControl for communicating with Drone Controller:**  follow instructions on website below  
+https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html    
 
 **ROS2 nodes for processing vicon position:**
 ```
@@ -67,6 +71,6 @@ git clone https://github.com/PX4/PX4-Autopilot
 git clone https://github.com/PX4/px4_ros_com.git 
 ```    
 
-## Contributors
+## Contributors/Credits
 
-The Holybro-Demo package is developed by: Joey Zou 
+The ROS2_ViconDroneCtrl package is developed by Joey Zou with support from ASRL (Autonomous Space Robotics Laboratory)

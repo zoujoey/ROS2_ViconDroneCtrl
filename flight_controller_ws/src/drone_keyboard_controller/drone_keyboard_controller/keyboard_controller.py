@@ -1,3 +1,6 @@
+"""
+ROS2 Node for processing keyboard inputs in terminal and communicating to command_control
+"""
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -22,7 +25,7 @@ class PublisherNode(Node):
         e: Circle Loop
         h: Helix Loop
         t: Linear Setpoints
-        p: Random Continuous Setpoints
+        y: Random Continuous Setpoints
         """
         self.get_logger().info(instructions)
         self.listener = keyboard.Listener(on_press=self.on_key_press, on_release=self.on_key_release)

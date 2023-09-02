@@ -1,6 +1,5 @@
 """
-ROS2 Node for processing keyboard inputs, communicating to trajectories on stand-by, and manual control of the drone
-(must be paired with ROS2 node pose_pub for position lock)
+ROS2 Node for processing keyboard inputs from keyboard_controller, communicating to trajectories on stand-by, and manual control of the drone
 """
 
 
@@ -187,10 +186,6 @@ def main(args=None):
     print("Starting offboard control node...\n")
     offboard_control = OffboardControl()
     rclpy.spin(offboard_control)
-
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
     offboard_control.destroy_node()
     rclpy.shutdown()
 

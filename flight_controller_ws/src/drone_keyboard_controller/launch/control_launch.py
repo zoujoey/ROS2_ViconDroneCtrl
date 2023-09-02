@@ -1,5 +1,6 @@
 """
 ROS2 Launch File for starting the keyboard_controller
+(must be paired with ROS2 node pose_pub for position lock)
 """
 from launch import LaunchDescription
 from launch_ros.actions import Node
