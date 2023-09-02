@@ -46,7 +46,7 @@ Controller Firmware Type, Version: **PX4 (with microRTPS), v1.13**
 Current Controller
 
 ### ROS2 Packages and other Software Requirements:  
-*Install the following github repos and applications:*  
+*Install the following github repos and applications, and colcon build the respective ROS2 Packages*  
 
 **ROS2 foxy:**  follow instructions on website below  
 https://docs.ros.org/en/foxy/Installation.html 
@@ -58,13 +58,11 @@ https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.h
 ```
 git clone https://github.com/OPT4SMART/ros2-vicon-receiver/tree/master
 ```    
-**ROS2 msg for PX4 MicroRTPS UorB Topics:**  
-```
-git clone https://github.com/PX4/px4_ros_com/tree/release/1.13
-```   
+**ROS2 msg for PX4 MicroRTPS UorB Topics:**  follow instructions on website below 
+https://docs.px4.io/v1.13/en/ros/ros2_comm.html
 **ROS2 package for building PX4 controller firmware/simulations:**
 ```
-git clone https://github.com/PX4/PX4-Autopilot 
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive
 ```   
 **ROS2 nodes for controlling the drone (this repo):**
 ```
