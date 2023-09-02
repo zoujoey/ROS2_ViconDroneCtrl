@@ -17,32 +17,38 @@ Welcome to the Holybro Demo Repository— a collection of ROS2 packages, executa
 **Installation Guide**: Detailed setup instructions for the drone control 
 environment.
 
-**Customization/Tuning Guide**: Modify drone behaviour/parameters as needed.
+**Customization Guide**: Modify drone behaviour/parameters as needed.
 
-**Safety Guide**: Essential safety guidelines for responsible drone operation.
+**Safety/Calibrating Guide**: Essential safety guidelines for responsible drone operation.
 
 **Troubleshooting Guide**: Solutions for common problems.
 
 ## Getting Started
 
-Before you begin the setup process, ensure you are familiar with the Safety Guidelines to ensure responsible drone operation. Once you are acquainted with the safety guidelines, proceed to the Prequisite section below, and then to Quick Setup Guide for initial drone control setup.   
+Before the setup process, ensure all the Prerequisites are finished below. Read the Safety Guidelines to ensure responsible drone operation. Once acquainted with the safety guidelines, proceed to the Quick Setup Guide for initial drone control setup.
 For detailed instructions, customisation, troubleshooting, and a demonstration of the drone's capabilities, consult the sections in the table of contents.
 
 ## Prequisites before starting 
 ### Hardware Prequisite:
+*Make sure that all the hardware components listed in the Drone_Components.jpg above are on the drone's top plate*  
+
+Drone Model: **Holybro Pixhawk 6c Controller, Holybro x500 v2 model**
 
 ### Software Prequisites: 
 *Make sure the software on the ground control and onboard computers are as follows*   
 
-Operating System: **Linux**  
+Operating System: **Ubuntu Linux, version 20**  
 ROS2 Version: **ROS2 Foxy**  
 Wifi Newtork: **TP-Link_ROB498**
 
-*Make sure the firmware on the drone controller are as follows*   
+*Make sure the firmware on the drone components are as follows*   
 Controller Firmware Type, Version: **PX4 (with microRTPS), v1.13**  
+Current Controller
 
 ### ROS2 Packages Prequisites:  
-*Install the following github repos:*  
+*Install the following github repos and applications:*  
+
+**ROS2 foxy**
 
 **ROS2 nodes for processing vicon position:**
 ```
