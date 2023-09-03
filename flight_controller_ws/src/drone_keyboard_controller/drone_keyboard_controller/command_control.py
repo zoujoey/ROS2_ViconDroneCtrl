@@ -58,7 +58,7 @@ class OffboardControl(Node):
             'e': 'circ',
             'h': 'heli',
             'r': 'return',
-            'x': 'fail-safe land',
+            'x': 'fail-safe land/kill',
             'f': 'float',
             't': 'linear_setpoint',
             'y': 'continuous_setpoint'
