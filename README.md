@@ -17,7 +17,7 @@ Welcome to the Holybro Demo Repository— a collection of ROS2 packages, executa
 **Installation/Calibration Guide**: Detailed setup instructions for the drone control 
 environment.
 
-**Customization Guide**: Modify drone behaviour/parameters in ROS2 Pipeline as needed.
+**Customization/Pipeline Guide**: Modify drone behaviour/parameters in ROS2 Pipeline as needed.
 
 **Troubleshooting Guide**: Solutions for common problems.
 
