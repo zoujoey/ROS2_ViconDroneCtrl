@@ -14,12 +14,12 @@ Welcome to the Holybro Demo Repository— a collection of ROS2 packages, executa
 
 **Quick Setup Guide**: Instructions for swift setup and drone control.
 
-**Installation Guide**: Detailed setup instructions for the drone control 
+**Installation/Calibration Guide**: Detailed setup instructions for the drone control 
 environment.
 
 **Customization Guide**: Modify drone behaviour/parameters as needed.
 
-**Safety/Calibrating Guide**: Essential safety guidelines for responsible drone operation.
+**Safety Guide**: Essential safety guidelines for responsible drone operation.
 
 **Troubleshooting Guide**: Solutions for common problems.
 
