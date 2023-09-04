@@ -129,7 +129,7 @@ Open the launch file graphing_launch.py, and set the 'simulation' parameter to T
 Navigate back to the workspace directory, remove build and install folders, colcon build, source necessary setup scripts, and launch the fake position lock:
 ```
 cd ../../..
-rm -rf build, install
+rm -rf build install
 colcon build --symlink-install
 source ~/ros2-vicon-receiver/vicon_receiver/install/setup.bash
 source ~/ROS2_ViconDroneCtrl/flight_controller_ws/install/setup.bash
