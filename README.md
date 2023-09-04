@@ -123,7 +123,7 @@ Before opening a third terminal, go into the following directory:
 ```
 ROS2_ViconDroneCtrl/flight_controller_ws/src/vicon_position_bridge/launch
 ```
-Open the launch file graphing_launch.py, and set the 'simulation' parameter to True.   
+Open the launch file graphing_launch.py, and set the 'simulation' parameter to True and save the file.   
 *Be sure to set this parameter back to False once flying the physical drone*
 
 Navigate back to the workspace directory, remove build and install folders, colcon build, source necessary setup scripts, and launch the fake position lock:
