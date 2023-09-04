@@ -51,47 +51,46 @@ Current Controller
 
 ### ROS2 Packages and other Software Requirements:  
 *Install the following github repos and applications, and colcon build the respective ROS2 Packages*  
-**Pip install dependencies**   
-run the following command in terminal after navigating to ROS2_ViconDroneCtrl directory   
-(Install on Ground Control Computer + Onboard)  
-```
-pip install -r requirements.txt
-```  
 **ROS2 foxy:**  
-follow instructions on website below  
+follow instructions on website below (install in home directory)
 (Install on Ground Control Computer + Onboard)  
 https://docs.ros.org/en/foxy/Installation.html 
 
 **QGroundControl for communicating with Drone Controller:**  
-follow instructions on website below  
+follow instructions on website below (install in home directory)
 (Install Ground Control Computer only)
 https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html    
 
 **ROS2 nodes for processing vicon position:**  
-run the following command in terminal  
+run the following command in terminal (install in home directory)
 (Install Ground Control Computer Only)
 ```
 git clone https://github.com/OPT4SMART/ros2-vicon-receiver/tree/master
 ```    
 **PX4_ROS_COM msgs & MicroRTPS Bridge for UorB Topics:**  
-follow instructions on website below  
+follow instructions on website below (install in home directory)
 (Install on Ground Control Computer + Onboard)  
 https://docs.px4.io/v1.13/en/ros/ros2_comm.html  
 
 **ROS2 package for building PX4 controller firmware/simulations:**  
-run the following command in terminal  
+run the following command in terminal (install in home directory)
 (Install Ground Control Computer Only)
 
 ```
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
 ```   
 **ROS2 nodes for controlling the drone (this repo):**  
-run the following command in terminal  
+run the following command in terminal (install in home directory)
 (Install on Ground Control Computer + Onboard)  
 ```
 git clone https://github.com/zoujoey/ROS2_ViconDroneCtrl.git
-```    
-
+```  
+**Pip install dependencies**   
+run the following command in terminal after navigating to ROS2_ViconDroneCtrl directory   
+(Install on Ground Control Computer + Onboard)  
+```
+pip install -r requirements.txt
+```  
 ## Sanity Check Installation / Gazebo Simulation Guide
 To make sure all the packages were correctly installed or to run a simulation with this pipeline, please follow the steps below:
 
