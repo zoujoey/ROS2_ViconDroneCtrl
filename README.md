@@ -52,7 +52,7 @@ Current Controller
 ### ROS2 Packages and other Software Requirements:  
 *Install the following github repos and applications, and colcon build the respective ROS2 Packages*  
 **Pip install dependencies**  
-run the following command in terminal after navigating to ROS2_ViconDroneCtrl directory
+run the following command in terminal after navigating to ROS2_ViconDroneCtrl directory  
 (Install on Ground Control Computer + Onboard)  
 ```
 pip install -r requirements.txt
