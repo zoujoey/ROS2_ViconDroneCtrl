@@ -10,3 +10,4 @@ mpl_toolkits
 numpy
 random
 pyquaternion
+rclpy
