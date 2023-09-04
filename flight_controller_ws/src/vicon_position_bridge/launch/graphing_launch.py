@@ -20,12 +20,12 @@ def generate_launch_description():
             )
         ld.add_action(vicon_wrapper_node)
 
-    pose_pub = Node(
-        package = "vicon_position_bridge",
-        executable = "pose_pub"
-    )
+        pose_pub = Node(
+                package = "vicon_position_bridge",
+                executable = "pose_pub"
+        )
 
-    ld.add_action(pose_pub)
+        ld.add_action(pose_pub)
     
     # pose_data_save = Node(
     #     package = "vicon_position_bridge",
