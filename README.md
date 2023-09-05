@@ -108,6 +108,10 @@ From the root of this repository, run
 colcon build --symlink-install
 source install/local_setup.bash
 ```
+When you build one package only, you can run
+```
+colcon build --symlink-install --packages-select <package-name>
+```
 
 ## Sanity Check Installation / Gazebo Simulation Guide
 
