@@ -105,9 +105,39 @@ source install/local_setup.bash
 ```
 
 ## Sanity Check Installation / Gazebo Simulation Guide
-To make sure all the packages were correctly installed or to run a simulation with this pipeline, please follow the steps below:
 
-### Terminal 1: Starting the Simulation
+### Quick sanity check
+
+As a first sanity check, you can run the below command and make sure it runs without errors.
+```
+ros2 launch drone_keyboard_controller control_launch.py 
+```
+This should output a stream similar to below. Make sure that when you press the key i, both KEY: and SET: change.
+```
+[command_control-2] POSE:0.0 0.0 0.0                                                          
+[command_control-2] SET:0.0 0.0 -0.25                                                         
+[command_control-2] [INFO] [1693946756.037120745] [OffboardControl]:                          
+[command_control-2] KEY: z                                                                    
+[command_control-2] REACHED/MODE:False True                                                   
+[command_control-2] POSE:0.0 0.0 0.0                                                          
+[command_control-2] SET:0.0 0.0 -0.25                                                         
+[command_control-2] [INFO] [1693946756.039957106] [OffboardControl]:                          
+[command_control-2] KEY: z                                                                    
+[command_control-2] REACHED/MODE:False True                                                   
+[command_control-2] POSE:0.0 0.0 0.0                                                          
+[command_control-2] SET:0.0 0.0 -0.25                                                         
+[command_control-2] [INFO] [1693946756.047085888] [OffboardControl]:                          
+[command_control-2] KEY: z                                                                    
+[command_control-2] REACHED/MODE:False True                                                   
+[command_control-2] POSE:0.0 0.0 0.0  
+```
+When killing the node, you should see messages of 10 nodes that are killed.
+
+### Simulation
+
+To run a simulation with this pipeline, please follow the steps below:
+
+#### Terminal 1: Starting the Simulation
 Open a terminal and cd into the PX4-Autopilot Directory that was just installed.
 
 In that directory, run the following command to start the Gazebo Simulation:
@@ -123,7 +153,7 @@ param set NAV_RCL_ACT 0
 ```
 This allows you to arm the drone in simulation even though it is not connected to a remote controller.
 
-### Terminal 2: Starting MicroRTPS Bridge
+#### Terminal 2: Starting MicroRTPS Bridge
 Open a second terminal, and source the following setup script:
 ```
 source install/local_setup.bash
@@ -133,7 +163,7 @@ then, run the following command to start the microRTPS bridge
 micrortps_agent -t UDP
 ```
 
-### Terminal 3: Starting fake vicon position lock
+#### Terminal 3: Starting fake vicon position lock
 
 Run simulation_graphing_launch to start the Vicon bridge. In simulation, this will publish the visual odometry position of the drone. 
 ```
@@ -141,7 +171,7 @@ source install/local_setup.bash
 ros2 launch vicon_position_bridge simulation_graphing_launch.py
 ```
 
-### Terminal 4: Starting the drone_keyboard_controller
+#### Terminal 4: Starting the drone_keyboard_controller
 In the last terminal, run the following commands, and the drone should start hovering after 30 seconds. If it does so, that means the pipeline is working correctly.  
 *For more information on how to use the keyboard controller, see Quick-Start Guide*
 ```
