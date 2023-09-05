@@ -1,0 +1,12 @@
+[submodule "PX4-Autopilot"]
+	path = PX4-Autopilot
+	url = https://github.com/PX4/PX4-Autopilot.git
+[submodule "px4_ros_com_ros2/src/px4_msgs"]
+	path = px4_ros_com_ros2/src/px4_msgs
+	url = https://github.com/PX4/px4_msgs.git
+[submodule "px4_ros_com_ros2/src/px4_ros_com"]
+	path = px4_ros_com_ros2/src/px4_ros_com
+	url = https://github.com/PX4/px4_ros_com.git
+[submodule "ros2-vicon-receiver"]
+	path = ros2-vicon-receiver
+	url = https://github.com/OPT4SMART/ros2-vicon-receiver

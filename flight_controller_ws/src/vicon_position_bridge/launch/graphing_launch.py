@@ -3,10 +3,10 @@ from launch_ros.actions import Node
 def generate_launch_description():
     ld = LaunchDescription()
     
-    hostname = '10.42.0.130'
+    hostname = '10.42.0.133'
     buffer_size = 1024
     topic_namespace = 'vicon'
-    simulation = True
+    simulation = False
     if simulation:
         fake_vicon_position_node = Node(
                 package="vicon_position_bridge",
