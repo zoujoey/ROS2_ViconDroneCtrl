@@ -24,11 +24,15 @@ https://docs.google.com/document/d/1OmSO_3oGtAG3CVVjXAy_KHn_xMD42szhOk2jm1l0Ne0/
 
 **Troubleshooting Guide**: Solutions for common problems.  
 https://docs.google.com/document/d/1OmSO_3oGtAG3CVVjXAy_KHn_xMD42szhOk2jm1l0Ne0/edit
+
+**Safety Guidelines**: Guidelines for flying the drone safely.
+https://docs.google.com/document/d/1OmSO_3oGtAG3CVVjXAy_KHn_xMD42szhOk2jm1l0Ne0/edit
+
 ## Getting Started
 
 Before the setup process, ensure all the Installation Requirements are met as below. and be sure to sanity check the installation by running a quick simulation. 
 
-Before flying the drone, Read the Safety Guidelines to ensure responsible drone operation. Once acquainted with the safety guidelines, proceed to the Quick Setup Guide for initial drone control setup.
+Before flying the drone, read the Safety Guidelines to ensure responsible drone operation. Once acquainted with the safety guidelines, proceed to the Quick Setup Guide for initial drone control setup.
 
 For detailed instructions, customisation, troubleshooting, and a demonstration of the drone's capabilities, consult the other guides above.
 
