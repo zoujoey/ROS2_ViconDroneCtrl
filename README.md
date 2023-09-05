@@ -42,6 +42,11 @@ For detailed instructions, customisation, troubleshooting, and a demonstration o
 *Make sure that all the hardware components listed in the Drone_Components.jpg above are on the drone's top plate*  
 
 Drone Model: **Holybro Pixhawk 6c Controller, Holybro x500 v2 model**
+Onboard Model **Nvidia Jetson Nano**
+
+*If you want to connect to the onboard computer through USB and power it through USB, you need to remove the jumper (at pins DC EN and D63).*
+
+*username: rob498, password: 99bobotw*
 
 ### Software Requirements: 
 *Make sure the software on the ground control and onboard computers are as follows*   
