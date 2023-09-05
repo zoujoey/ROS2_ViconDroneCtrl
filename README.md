@@ -94,6 +94,13 @@ source build_ros2_workspace.bash
 Go to submodule `PX4-Autopilot` and follow installation instructions (see also below link).
 https://docs.px4.io/v1.13/en/dev_setup/dev_env_linux_ubuntu.html
 
+**Build all packages:**
+From the root of this repository, run
+```
+colcon build --symlink-install
+source install/local_setup.bash
+```
+
 ## Sanity Check Installation / Gazebo Simulation Guide
 To make sure all the packages were correctly installed or to run a simulation with this pipeline, please follow the steps below:
 
@@ -113,11 +120,9 @@ param set NAV_RCL_ACT 0
 ```
 
 ### Terminal 2: Starting MicroRTPS Bridge
-Open a second terminal, and source the following setup scripts:
-
+Open a second terminal, and source the following setup script:
 ```
-source ~/ROS2_ViconDroneCtrl/flight_controller_ws/install/setup.bash
-source ~/px4_ros_com_ros2/install/setup.bash
+source install/local_setup.bash
 ```
 then, run the following command to start the microRTPS bridge
 ```
@@ -132,13 +137,11 @@ ROS2_ViconDroneCtrl/flight_controller_ws/src/vicon_position_bridge/launch
 Open the launch file graphing_launch.py, and set the 'simulation' parameter to True and save the file.   
 *Be sure to set this parameter back to False once flying the physical drone*
 
-Navigate back to the workspace directory, remove build and install folders, colcon build, source necessary setup scripts, and launch the fake position lock:
+Navigate back to the root of this directory, remove build and install folders, colcon build, source necessary setup scripts, and launch the fake position lock:
 ```
-cd ../../..
 rm -rf build install
 colcon build --symlink-install
-source ~/ROS2_ViconDroneCtrl/flight_controller_ws/install/setup.bash
-source ~/px4_ros_com_ros2/install/setup.bash
+source install/local_setup.bash
 ros2 launch vicon_position_bridge graphing_launch.py
 ```
 
@@ -146,8 +149,7 @@ ros2 launch vicon_position_bridge graphing_launch.py
 In the last terminal, run the following commands, and the drone should start hovering after 30 seconds. If it does so, that means the pipeline is working correctly.  
 *For more information on how to use the keyboard controller, see Quick-Start Guide*
 ```
-source ~/px4_ros_com_ros2/install/setup.bash
-source ~/ROS2_ViconDroneCtrl/flight_controller_ws/install/setup.bash
+source install/local_setup.bash
 ros2 launch drone_keyboard_controller control_launch.py
 ```
 ## Contributors/Credits
