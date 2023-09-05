@@ -58,7 +58,6 @@ Wifi Newtork: **TP-Link_ROB498**
 *Make sure the firmware on the drone components are as follows*   
 
 Controller Firmware Type, Version: **PX4 (with microRTPS), v1.13**  
-Current Controller WHAT IS THIS? 
 
 ### ROS2 Packages and other Software Requirements:  
 *Install the following github repos and applications, and colcon build the respective ROS2 Packages. (GCS) means these parts have to be installed on the ground control station (the laptop) only, all other parts have to be installed on the onbard computer and GCS.*  
