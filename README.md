@@ -145,7 +145,7 @@ In the last terminal, run the following commands, and the drone should start hov
 ```
 source ~/px4_ros_com_ros2/install/setup.bash
 source ~/ROS2_ViconDroneCtrl/flight_controller_ws/install/setup.bash
-ros2 launch drone_keyboard_controller control_command.py
+ros2 launch drone_keyboard_controller control_launch.py
 ```
 ## Contributors/Credits
 
