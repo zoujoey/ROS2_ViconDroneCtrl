@@ -6,7 +6,6 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
 from px4_msgs.msg import VehicleVisualOdometry, Timesync
-import pyquaternion
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSHistoryPolicy, QoSDurabilityPolicy, QoSReliabilityPolicy
 import time
