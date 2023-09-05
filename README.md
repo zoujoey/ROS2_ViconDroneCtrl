@@ -121,6 +121,7 @@ param set COM_RCL_EXCEPT 4
 param set NAV_DLL_ACT 0
 param set NAV_RCL_ACT 0
 ```
+This allows you to arm the drone in simulation even though it is not connected to a remote controller.
 
 ### Terminal 2: Starting MicroRTPS Bridge
 Open a second terminal, and source the following setup script:
@@ -133,19 +134,11 @@ micrortps_agent -t UDP
 ```
 
 ### Terminal 3: Starting fake vicon position lock
-Before opening a third terminal, go into the following directory:
-```
-ROS2_ViconDroneCtrl/flight_controller_ws/src/vicon_position_bridge/launch
-```
-Open the launch file graphing_launch.py, and set the 'simulation' parameter to True and save the file.   
-*Be sure to set this parameter back to False once flying the physical drone*
 
-Navigate back to the root of this directory, remove build and install folders, colcon build, source necessary setup scripts, and launch the fake position lock:
+Run simulation_graphing_launch to start the Vicon bridge. In simulation, this will publish the visual odometry position of the drone. 
 ```
-rm -rf build install
-colcon build --symlink-install
 source install/local_setup.bash
-ros2 launch vicon_position_bridge graphing_launch.py
+ros2 launch vicon_position_bridge simulation_graphing_launch.py
 ```
 
 ### Terminal 4: Starting the drone_keyboard_controller
