@@ -9,6 +9,7 @@ This repo provides the user with 3 ways to control the drone:
 - Using a ros2 launch file and configuration file from the **drone_keyboard_controller** package, the user may flexibly run customizable autonomous missions or manually using the ***computer's keyboard***, all while flying in the drone's *offboard mode*.
 - Using the singular ros2 nodes from the **drone_offboard_controller** package, the user may fly various autonomous missions using the ***computer terminal*** to fly the drone in *offboard mode*. 
 (*Using the **drone_offboard_controller** package will require the user to be familiar with how the PX4 firmware and ROS2 integration works.*)
+
 ## Guides
 Each of the following guides can be found in the pdfs in the root of the repo or through a link to an editable google docs below.
 
@@ -24,6 +25,7 @@ https://docs.google.com/document/d/1OmSO_3oGtAG3CVVjXAy_KHn_xMD42szhOk2jm1l0Ne0/
 
 **Troubleshooting Guide**: Solutions for common problems.  
 https://docs.google.com/document/d/1OmSO_3oGtAG3CVVjXAy_KHn_xMD42szhOk2jm1l0Ne0/edit
+
 ## Getting Started
 
 Before the setup process, ensure all the Installation Requirements are met as below. and be sure to sanity check the installation by running a quick simulation. 
@@ -46,42 +48,38 @@ ROS2 Version: **ROS2 Foxy**
 Wifi Newtork: **TP-Link_ROB498**
 
 *Make sure the firmware on the drone components are as follows*   
+
 Controller Firmware Type, Version: **PX4 (with microRTPS), v1.13**  
-Current Controller
+Current Controller WHAT IS THIS? 
 
 ### ROS2 Packages and other Software Requirements:  
-*Install the following github repos and applications, and colcon build the respective ROS2 Packages*  
+*Install the following github repos and applications, and colcon build the respective ROS2 Packages. (GCS) means these parts have to be installed on the ground control station (the laptop) only, all other parts have to be installed on the onbard computer and GCS.*  
+
 **ROS2 foxy:**  
-follow instructions on website below (install in home directory)  
-(Install on Ground Control Computer + Onboard)  
+Follow instructions on website below:  
 https://docs.ros.org/en/foxy/Installation.html 
 
-**QGroundControl for communicating with Drone Controller:**  
-follow instructions on website below (install in home directory)  
-(Install Ground Control Computer only)
+**QGroundControl for communicating with Drone Controller (GCS):**  
+Follow instructions on website below:
 https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html    
 
 **ROS2 nodes for controlling the drone (this repo):**  
-run the following command in terminal (install in home directory)  
-(Install on Ground Control Computer + Onboard)  
+Run the following command in terminal:
 ```
 git clone --recursive https://github.com/zoujoey/ROS2_ViconDroneCtrl.git
 ```  
 
 **Pip install dependencies**   
-run the following command in terminal   
-(Install on Ground Control Computer + Onboard)  
+Run the following command in terminal   
 ```
 pip install -r requirements.txt
 ```  
 
-**ROS2 nodes for processing vicon position:**  
+**ROS2 nodes for processing vicon position (GCS):**  
 go to submodule `ros2-vicon-receiver` and follow its installation instructions.
-(Install Ground Control Computer Only)
 
 **PX4_ROS_COM msgs & MicroRTPS Bridge for UorB Topics:**  
-below instructions are adopted from below website (but simplified as the correct repos are already added as submodules to this repo)
-(Install on Ground Control Computer + Onboard)  
+Below instructions are adopted from the following website, but simplified as the correct repos are already added as submodules to this repo.
 https://docs.px4.io/v1.13/en/ros/ros2_comm.html  
 
 1. Install Fast DDS using [this section](https://docs.px4.io/v1.13/en/ros/ros2_comm.html#install-fast-dds)
@@ -92,12 +90,9 @@ cd px4_ros_com_ros2/src/px4_ros_com/scripts
 source build_ros2_workspace.bash
 ```
 
-**ROS2 package for building PX4 controller firmware/simulations:**  
-go to submodule `PX4-Autopilot` and follow installation instructions (see also below link).
-(Install Ground Control Computer Only)
+**ROS2 package for building PX4 controller firmware/simulations (GCS):**  
+Go to submodule `PX4-Autopilot` and follow installation instructions (see also below link).
 https://docs.px4.io/v1.13/en/dev_setup/dev_env_linux_ubuntu.html
-
-
 
 ## Sanity Check Installation / Gazebo Simulation Guide
 To make sure all the packages were correctly installed or to run a simulation with this pipeline, please follow the steps below:
