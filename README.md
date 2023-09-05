@@ -65,7 +65,7 @@ https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.h
 run the following command in terminal (install in home directory)  
 (Install Ground Control Computer Only)
 ```
-git clone https://github.com/OPT4SMART/ros2-vicon-receiver/tree/master
+git clone -b foxy https://github.com/OPT4SMART/ros2-vicon-receiver
 ```    
 **PX4_ROS_COM msgs & MicroRTPS Bridge for UorB Topics:**  
 follow instructions on website below (install in home directory)  
@@ -77,7 +77,7 @@ run the following command in terminal (install in home directory)
 (Install Ground Control Computer Only)
 
 ```
-git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+git clone -b release/1.13 https://github.com/PX4/PX4-Autopilot.git --recursive
 ```   
 **ROS2 nodes for controlling the drone (this repo):**  
 run the following command in terminal (install in home directory)  
@@ -113,7 +113,6 @@ param set NAV_RCL_ACT 0
 Open a second terminal, and source the following setup scripts:
 
 ```
-source ~/ros2-vicon-receiver/vicon_receiver/install/setup.bash
 source ~/ROS2_ViconDroneCtrl/flight_controller_ws/install/setup.bash
 source ~/px4_ros_com_ros2/install/setup.bash
 ```
@@ -135,7 +134,6 @@ Navigate back to the workspace directory, remove build and install folders, colc
 cd ../../..
 rm -rf build install
 colcon build --symlink-install
-source ~/ros2-vicon-receiver/vicon_receiver/install/setup.bash
 source ~/ROS2_ViconDroneCtrl/flight_controller_ws/install/setup.bash
 source ~/px4_ros_com_ros2/install/setup.bash
 ros2 launch vicon_position_bridge graphing_launch.py
@@ -145,9 +143,8 @@ ros2 launch vicon_position_bridge graphing_launch.py
 In the last terminal, run the following commands, and the drone should start hovering after 30 seconds. If it does so, that means the pipeline is working correctly.  
 *For more information on how to use the keyboard controller, see Quick-Start Guide*
 ```
-source ~/ros2-vicon-receiver/vicon_receiver/install/setup.bash
-source ~/ROS2_ViconDroneCtrl/flight_controller_ws/install/setup.bash
 source ~/px4_ros_com_ros2/install/setup.bash
+source ~/ROS2_ViconDroneCtrl/flight_controller_ws/install/setup.bash
 ros2 launch drone_keyboard_controller control_command.py
 ```
 ## Contributors/Credits
