@@ -16,7 +16,7 @@ from px4_msgs.msg import TrajectorySetpoint
 from px4_msgs.msg import VehicleCommand
 from px4_msgs.msg import VehicleControlMode
 from math import sin, cos, tan, pi
-from test_flight_controller_five.param_trajectory import position_function
+from drone_keyboard_controller.param_trajectory import position_function
 import time
 import math
 import yaml
