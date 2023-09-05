@@ -1,6 +1,0 @@
-source;share/drone_offboard_missions/hook/pythonpath.ps1
-source;share/drone_offboard_missions/hook/pythonpath.dsv
-source;share/drone_offboard_missions/hook/pythonpath.sh
-source;../../build/drone_offboard_missions/share/drone_offboard_missions/hook/pythonpath_develop.ps1
-source;../../build/drone_offboard_missions/share/drone_offboard_missions/hook/pythonpath_develop.dsv
-source;../../build/drone_offboard_missions/share/drone_offboard_missions/hook/pythonpath_develop.sh

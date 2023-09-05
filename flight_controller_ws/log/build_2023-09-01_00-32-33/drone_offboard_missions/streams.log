@@ -1,9 +1,0 @@
-[0.538s] Invoking command in '/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/drone_offboard_missions': PYTHONPATH=/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/drone_offboard_missions/prefix_override:/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/install/drone_offboard_missions/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/drone_offboard_missions/build --no-deps install_data
-[0.668s] /home/asrl/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
-[0.669s]   warnings.warn(
-[0.698s] running develop
-[0.785s] running egg_info
-[0.788s] writing manifest file 'drone_offboard_missions.egg-info/SOURCES.txt'
-[0.807s] running build_ext
-[0.809s] running install_data
-[0.826s] Invoked command in '/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/drone_offboard_missions' returned '0': PYTHONPATH=/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/drone_offboard_missions/prefix_override:/home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/install/drone_offboard_missions/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/ROS2_ViconDroneCtrl/flight_controller_ws/build/drone_offboard_missions/build --no-deps install_data

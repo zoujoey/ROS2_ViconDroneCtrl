@@ -1,0 +1,10 @@
+# build files
+build/
+install/
+log/
+__pycache__/
+
+
+# output files
+position_data.csv
+Vicon_position_trajectory.png
