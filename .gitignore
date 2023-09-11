@@ -8,3 +8,4 @@ __pycache__/
 # output files
 position_data.csv
 Vicon_position_trajectory.png
+UWB_position_trajectory.png
