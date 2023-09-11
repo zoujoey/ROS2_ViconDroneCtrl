@@ -10,3 +10,6 @@
 [submodule "ros2-vicon-receiver"]
 	path = ros2-vicon-receiver
 	url = https://github.com/OPT4SMART/ros2-vicon-receiver
+[submodule "ROS2_UWBPoseTracker"]
+	path = ROS2_UWBPoseTracker
+	url = git@github.com:zoujoey/ROS2_UWBPoseTracker
